@@ -272,7 +272,7 @@ li {
 @media (max-width: 800px) {
   .contents-4 {
     margin-top: 0px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
 }
@@ -284,17 +284,24 @@ li {
 
 .title {
   text-align: left;
+  padding-left: 6vh;
+}
+
+@media (max-width: 800px) {
+  .title {
+    padding-left: 20px;
+  }
 }
 
 
 
 .title img{
-  width: 20%;
+  width: 24%;
 }
 
 @media (max-width: 800px) {
   .title img{
-    width:60%;
+    width:40%;
   }
 }
 
@@ -478,9 +485,15 @@ li {
   margin-top: 30px;
 }
 
+
+
 .button-container{
   text-align: center;
   padding-top: 50px;
+}
+
+.button-container p{
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {
@@ -493,32 +506,68 @@ li {
 
 .container-white{
   width: 90%;
-  text-align: center;
   margin: 50px auto;
   padding-top: 30px;
   padding-bottom: 30px;
   height: auto;
   background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  .container-white{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.container-white img{
+  width: 25%;
+}
+
+@media (max-width: 800px) {
+  .container-white img{
+    width: 70%;
+    margin-bottom: 30px;
+  }
 }
 
 .contents-image{
   width: 90%;
-  text-align: center;
-  margin: 0 auto;
+  margin: 50px auto;
+  padding-top: 30px;
   padding-bottom: 30px;
   height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+@media (max-width: 800px) {
+  .contents-image{
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 
+
 .contents-image img{
-  margin:20px;
   width: 20%;
 }
 
 @media (max-width: 800px) {
   .contents-image img{
     width: 60%;
+    margin-bottom: 40px;
   }
+}
+
+.reply{
+  font-weight: bold;
 }
 
 
@@ -530,6 +579,13 @@ li {
 .sns a{
       margin: 10px 20px;
       position: relative;
+}
+
+@media (max-width: 800px) {
+  .sns img{
+        width: 15%;
+  }
+
 }
 
 
