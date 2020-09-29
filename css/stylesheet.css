@@ -20,7 +20,7 @@ li {
   .header {
     background-color: #F2F2F2;
     width:100%;
-    height: auto;
+    height: 50px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -81,7 +81,15 @@ li {
   .header-right .hamburger {
     display:inline-block;
     float: right;
+    position: relative;
+    width: 90%;
   }
+}
+
+
+
+
+
   .header-right .facebook {
     display: none;
   }
@@ -137,6 +145,26 @@ li {
   /* Windows (全バージョン)のみ */
   font-family: Futura, 'Century Gothic';
   font-weight: 600;
+}
+
+.sp-menu{
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .sp-menu {
+    display: none;
+    position: fixed;
+    top:50px;
+    right: 0vw;
+    width: 160px;
+    height: 100%;
+    background-color: white;
+  }
+
+  .sp-menu img{
+    zoom:0.3;
+  }
 }
 
 .main {
@@ -587,6 +615,18 @@ li {
   }
 
 }
+
+.side-sns{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.side-sns img{
+  width:120%;
+}
+
 
 
 .footer {
