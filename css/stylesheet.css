@@ -495,7 +495,8 @@ li {
 
 
 .contents-left h3{
-  font-size: 20px;
+  margin-top: 40px;
+  font-size: 24px;
   margin-left: 120px;
   font-weight: bold;
   text-align: left;
@@ -509,6 +510,7 @@ li {
 }
 
 .contents-left p{
+  margin-top: 50px;
   margin-left: 120px;
   font-size: 16px;
   font-weight: bold;
@@ -602,6 +604,7 @@ li {
 .contents-right img {
   width:90%;
   padding-top:6vh;
+  padding-right: 60px;
 }
 
 @media (max-width: 800px) {
