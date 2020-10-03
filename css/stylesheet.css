@@ -313,11 +313,30 @@ li {
   /* margin-topを100pxにしてください */
   margin-top: 80px;
   width:100%;
-  background-image: url("../images/background-big.png");
+  background-color: #F2F2F2;
   background-size:cover;
   display: flex;
-  padding-bottom: 30px
+  padding-bottom: 30px;
+  position:relative;
 }
+
+.Item-Content-Flg1 {/*三角形左上*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 6vw solid #20B0B2;
+  border-bottom: 6vw solid transparent;
+  z-index: 0;
+}
+
+@media (max-width: 800px) {
+  .Item-Content-Flg1 {/*三角形左上*/
+    border-left: 10vw solid #20B0B2;
+    border-bottom: 10vw solid transparent;
+    z-index: 0;
+  }
+}
+
 
 @media (max-width: 800px) {
   .contents {
@@ -362,14 +381,15 @@ li {
   margin-top: 100px;
   padding-top: 100px;
   width:100%;
-  background-image: url("../images/background-big.png");
+  background-color: #F2F2F2;
   background-size:cover;
+  position:relative;
 
 }
 
 @media (max-width: 800px) {
   .contents-3{
-    background-image: url("../images/background-long.png");
+    background-color: #F2F2F2;
     margin-top: 100px;
     padding-top: 50px;
   }
@@ -433,6 +453,7 @@ li {
 @media (max-width: 800px) {
 .contents-left  .title img{
     width:60%;
+    z-index: 2;
   }
 }
 
@@ -459,6 +480,7 @@ li {
   padding-top: 4vh;
   padding-left: 6vh;
   text-align: left;
+  z-index: 2;
 }
 
 @media (max-width: 800px) {
@@ -466,6 +488,7 @@ li {
     padding-top: 20px;
     padding-left: 20px;
     text-align: left;
+    z-index: 2;
   }
 }
 
