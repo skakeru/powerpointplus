@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Calibri',YuGothic,'Yu Gothic',sans-serif;
   margin: 0;
@@ -745,8 +748,7 @@ li {
 /* works.html */
 .contents-5 {
   height: auto;
-  /* margin-topを100pxにしてください */
-  margin-top: 50px;
+  padding-top: 100px;
   width:100%;
   background-color: white;
   background-size:cover;
