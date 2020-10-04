@@ -10,6 +10,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .sp_br{
   display:none;
 }
@@ -535,14 +539,14 @@ li {
 }
 
 .contents-full div{
-  padding-top: 4vh;
+  padding-top: 50px;
   padding-left: 6vh;
   text-align: left;
 }
 
 @media (max-width: 800px) {
   .contents-full div{
-    padding-top: 20px;
+    padding-top: 25px;
     padding-left: 20px;
     text-align: left;
   }
