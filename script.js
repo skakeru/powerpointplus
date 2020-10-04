@@ -8,9 +8,11 @@ $(function() {
               rightVal = -300;
               // メニューを開いたら次回クリック時は閉じた状態になるよう設定
               $(this).removeClass("open");
+              $(this).children('img').attr('src','./images/hamburger.png');
           } else {
               // メニューを開いたら次回クリック時は閉じた状態になるよう設定
               $(this).addClass("open");
+              $(this).children('img').attr('src','./images/peke.png')
           }
 
           $("#global-navi").stop().animate({
