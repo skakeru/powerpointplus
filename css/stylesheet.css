@@ -10,6 +10,17 @@ li {
   list-style: none;
 }
 
+.sp_br{
+  display:none;
+}
+
+@media (max-width: 800px) {
+  .sp_br{
+    display:block;
+  }
+
+}
+
 .header {
   background-color: #ffffff;
   color: #000;
@@ -221,14 +232,8 @@ li {
       -webkit-transition: all 400ms;
       transition: all 400ms
   }
-  #wrapper .btn-gnavi span {
-      position: absolute;
-      width: 30px;
-      height: 4px;
-      background: black;
-      border-radius: 10px;
-      -webkit-transition: all 400ms;
-      transition: all 400ms
+  #wrapper .btn-gnavi img {
+      zoom:0.5;
   }
   #wrapper .btn-gnavi span:nth-child(1) {
       top: 0
@@ -242,9 +247,7 @@ li {
   #wrapper .btn-gnavi.open span {
       background: black;
   }
-  #wrapper .btn-gnavi.open span {
-      width: 30px;
-  }
+
   #wrapper .contents section p {
       position: absolute;
       top: 50%;
@@ -384,7 +387,7 @@ li {
   height: auto;
   /* margin-topを100pxにしてください */
   margin-top: 100px;
-  padding-top: 100px;
+  padding-top: 20px;
   width:100%;
   background-color: #F2F2F2;
   background-size:cover;
@@ -396,7 +399,7 @@ li {
   .contents-3{
     background-color: #F2F2F2;
     margin-top: 100px;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 }
 
@@ -509,13 +512,14 @@ li {
 
 @media (max-width: 800px) {
   .contents-left h3{
+    margin-top: 10px;
     margin-left: 30px;
     font-size: 16px;
   }
 }
 
 .contents-left p{
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 120px;
   font-size: 16px;
   font-weight: bold;
@@ -525,6 +529,7 @@ li {
 @media (max-width: 800px) {
   .contents-left p{
     margin-left: 30px;
+    margin-top: 20px;
     font-size: 10px;
   }
 }
@@ -614,8 +619,9 @@ li {
 
 @media (max-width: 800px) {
   .contents-right img{
-    width:95%;
-    padding-right:0px;
+    width:100%;
+    padding-right:10px;
+    vertical-align: middle;
   }
 }
 
